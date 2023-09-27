@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/02-react-steps/static/css/main.31d6cfe0.css",
+    "main.js": "/02-react-steps/static/js/main.07d3183d.js",
+    "index.html": "/02-react-steps/index.html",
+    "main.07d3183d.js.map": "/02-react-steps/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.07d3183d.js"
+  ]
+}
