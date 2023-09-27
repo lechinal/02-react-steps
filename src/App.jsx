@@ -27,6 +27,8 @@ export default function App() {
    * ! cateodata cand avem o logica usoara cum ar fi acest buton de open-close
    * TODO: <button className="close" onClick={()=>setIsOpen(!isOpen)}>&times;</button>
    *
+   * ! updating state based on the current values of that state:
+   * TODO: <button className="close" onClick={()=>setIsOpen( (is =>!is)}>&times;</buton>
    */
 
   return (
