@@ -22,8 +22,19 @@ export default function App() {
     setIsOpen(!isOpen);
   }
 
+  /** IMPORTANT
+   * * onClick function defined inline
+   * ! cateodata cand avem o logica usoara cum ar fi acest buton de open-close
+   * TODO: <button className="close" onClick={()=>setIsOpen(!isOpen)}>&times;</button>
+   *
+   */
+
   return (
     <>
+      <button className="close" onClick={() => setIsOpen(!isOpen)}>
+        &times;
+      </button>
+
       <button className="close" onClick={handleClose}>
         &times;
       </button>
