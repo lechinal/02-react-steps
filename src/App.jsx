@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import Button from './components/Button/Button';
+import StepMessage from 'components/StepMessage/StepMessage';
 
 const messages = [
   'Learn React ⚛️',
@@ -47,9 +48,18 @@ export default function App() {
             <div className={step >= 3 ? 'active' : ''}>3</div>
           </div>
 
-          <p className="message">
-            Step {step}:{messages[step - 1]}
-          </p>
+          <StepMessage step={step}>
+            {messages[step - 1]}
+            <div className="buttons">
+              <Button
+                backgroundColor="#e7e7e7"
+                textColor="#333"
+                onClick={() => alert(`Lear how to ${messages[step - 1]}`)}
+              >
+                Lear how
+              </Button>
+            </div>
+          </StepMessage>
 
           <div className="buttons">
             <Button
